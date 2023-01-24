@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik dan Saran</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg w-100 bg-style ps-5 pe-5 position-fixed">
+        <div class="container-fluid navbars">
+            <div class="container-logo ">
+                <img class="logo" src="../img/logo.png" alt="logo">
+                <a class="navbar-brand judul ms-3" href="#">KELINGKING BEACH</a>
+            </div>
+            <button class="navbar-toggler tombol" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarSupportedContent">
+                <div class="d-flex">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item menu me-3">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item menu me-3">
+                        <a class="nav-link" href="culture.html">About</a>
+                    </li>
+                    <li class="nav-item menu me-3">
+                        <a class="nav-link aktif" href="kritik.html">Kritik dan Saran</a>
+                    </li>
+                    <li class="nav-item menu me-3">
+                        <a class="nav-link" href="../slide/Galery.html">Galery</a>
+                    </li>
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success tombol" type="submit">Search</button>
+                </form>
+                </ul>
+                 
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container ctrl text-center">
+        <h2>Suggestion Page</h2>
+        <p class="lead">Enter your advice about the scenery in Kelingking Beach without containing racial elements or hate speech.</p>
+    </div>
+
+    <div class="container form-kritik">
+        <div class="kritik">
+            <form class="form_saran" method="post" name="form">
+                <div class="text-center judul-form">
+                    <h5>Suggestion Form</h5>
+                </div>
+                <div class="mb-3">
+                    <label for="nama" class="form-label bold">Your Name</label>
+                    <input type="text" class="form-control" id="nama" name="nama" aria-describedby="Nama">
+                    <div id="nameHelp" class="form-text">We'll never share your name with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label bold">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="umur" class="form-label bold">Your Age</label>
+                    <input type="number" class="form-control" id="umur" name="umur">
+                    <div id="ageHelp" class="form-text">We'll never share your age with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="jeniskelamin" class="form-label bold">Gender</label>
+                    <p><input type="radio" id="jeniskelamin" name="jeniskelamin" value="Pria">Male</p>
+                    <p><input type="radio" id="jeniskelamin" name="jeniskelamin" value="Wanita">Famale</p>
+                    <div id="genderHelp" class="form-text">We'll never share your gender with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="saran" class="form-label bold">Your Suggestion</label>
+                    <input type="text" class="form-control" id="saran" name="saran" aria-describedby="Saran">
+                    <div id="saranHelp" class="form-text">We'll never share your suggestion with anyone else.</div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" onclick="simpan()" >Submit</button>
+              </form>
+        </div>
+    </div>
+
+
+    <footer class="text-white text-center text-lg-start bg-dark">
+        <div class="container p-4">
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">About company</h5>
+                    <p>Pantai Kelingking lokasinya berada di sisi Barat Daya pulau Nusa Penida. Alamatnya berada di Karang Dawa, Nusa Penida. Maka itu, pantai Kelingking juga terkenal oleh masyarakat lokal dengan nama Pantai Karang Dawa.</p>  
+                    <div class="mt-4">
+                        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+        
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Nusa Penida, Klungkung, Bali</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">nusapenida69@gmail.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+6283111500516</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" style="width: fit-content;">
+                    <h5 class="text-uppercase mb-4 pb-1">Google Maps</h5>
+                    <iframe style="border: 0 ;width: 100%; height: -webkit-fill-available;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252421.70800579686!2d115.07117503406569!3d-8.683068578246546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd26f1616cd2cc7%3A0xee84b7df0afbff19!2sKelingking%20Beach%20Nusa%20Penida!5e0!3m2!1sid!2sid!4v1674274123383!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright: keindahan versi rdastm
+        </div>
+    </footer>
+    
+<script src="script.js"></script>
+
+
+</body>
+</html>

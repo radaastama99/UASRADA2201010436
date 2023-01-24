@@ -1,0 +1,139 @@
+@font-face{
+    font-family: 'poppins', sans-serif;
+    src: url('poppins/Poppins-regular.ttf');
+}
+:root{
+    --color:rgb(0, 0, 0);
+    --btnhover:rgb(16, 92, 155);
+    --btn:rgb(48, 47, 47);
+    --texthover:rgb(255, 255, 255);
+    --colorbackground: rgb(99, 99, 99);
+    --colorbg : rgb(255, 255, 255);
+}
+
+*{
+    font-family: 'poppins', sans-serif;
+}
+.bg-style{
+    z-index: 100;
+    background-color: var(--colorbackground);
+}
+.tombol{
+    background-color: var(--btn);
+    color: var(--color);
+    border: none;
+}
+.tombol:hover{
+    background-color: var(--btnhover);
+    color: var(--texthover);
+}
+.tombol a{
+    text-decoration: none;
+    color: var(--texthover);
+}
+.logo{
+    width: 80px;
+}
+.judul{
+    font-size: 25px;
+    font-weight: bold;
+}
+.container-logo .judul{
+    color: var(--color);
+}
+.navbars{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu a{
+    color: var(--color);
+}
+.menu a:hover{
+    color: var(--btn);
+}
+.menu .aktif {
+    color: var(--btn);
+}
+.slider{
+    height: 500px;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+}
+.welcome{
+    color: var(--color);
+    position: relative;
+    top: 200px;
+    z-index: 20;
+    width: 50%;
+}
+.welcome h1{
+    font-weight: bold;
+    color: var(--btn);
+}
+.welcome p{
+    font-size: 18px;
+    color: var(--color);
+}
+.daftar{
+    z-index: 30;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.daftar1{
+    background-color: var(--colorbg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.daftar2 h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.daftar h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.gambar{
+    height: 300px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 12px 19px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 19px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 19px -2px rgba(0,0,0,0.75);
+}
+.ctrl{
+    padding-top: 100px;
+}
+.ctrl h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+.form-kritik{
+    padding: 50px 0;
+    width: 50%;
+}
+.kritik{
+    background-color: var(--colorbg);
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 12px 19px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 19px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 19px -2px rgba(0,0,0,0.75);
+}
+.judul-form h5{
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
+.form_saran #nameHelp,
+.form_saran #emailHelp,
+.form_saran #ageHelp,
+.form_saran #genderHelp,
+.form_saran #saranHelp{
+    color: red;
+    display: none;
+}
